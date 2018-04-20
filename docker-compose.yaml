@@ -1,0 +1,14 @@
+version: '2.1'
+services:
+  writer:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    command: /run/writer.sh
+
+  reader:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    command: /run/reader.sh
+
